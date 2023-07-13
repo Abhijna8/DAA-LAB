@@ -77,3 +77,12 @@ while len(nodes) > 1:
  
 # Huffman Tree is ready!
 printNodes(nodes[0])
+
+huffman_tree = nodes[0]
+
+encoded_text = input("Enter the encoded text: ")
+decoded_text = decode_text(encoded_text, huffman_tree)
+print("Decoded text:", decoded_text)
+text_input = input("Enter text to encode: ")
+encoded_binary_text = encode_text(text_input, huffman_tree)
+print("Encoded binary text:", encoded_binary_text)
