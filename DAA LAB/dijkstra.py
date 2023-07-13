@@ -12,7 +12,7 @@ def dijkstra(graph, start):
         for neighbor, weight in graph[current_node].items():
             distance = current_dist + weight
             if distance < distances[neighbor]:
-                distances[neighbor] = distance
+                distances[neighbor] = distance 
                 heapq.heappush(heap, (distance, neighbor))
 
     return distances
