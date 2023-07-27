@@ -67,3 +67,20 @@ if route is None:
     print("No route found.")
 else:
     print("Optimal route:", route)
+
+    
+'''
+Output:
+Enter the number of edges in the graph: 7
+Enter the edges in the format 'node1 node2 weight':
+A B 3
+B C 9
+C E 6
+D E 4
+A D 7
+B D 2
+C D 5
+Enter the start node: A
+Enter the destination node: E
+Optimal route: ['A', 'B', 'D', 'E']
+'''
