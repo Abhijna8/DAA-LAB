@@ -15,6 +15,11 @@ def knapsack_max_profit(weights, costs,capacity):
               total_weights -=weights[i-1]
   return table[num_items][capacity], selected_items
 
+weights = input("Enter the weights of the items (comma-separated): ")
+weights = [int(w) for w in weights.split(",")]
+costs = input("Enter the costs of the items (comma-separated): ")
+costs = [int(c) for c in costs.split(",")]
+capacity = int(input("Enter the capacity of the knapsack: "))
 
 weights=[2, 3, 4, 5]
 costs=[10, 20, 30, 40]    
@@ -26,8 +31,17 @@ print("selected coffee beans(weight):",[weights[i] for i in selected_items])
 print("selected coffee beans(costs):",[costs[i] for i in selected_items])
 
 '''
+/*OUTPUT
+Enter the weights of the items (comma-separated): 2,3,4,5
+Enter the costs of the items (comma-separated): 10,20,30,40
+Enter the capacity of the knapsack: 10
 Maximum profit: 70
 selected coffee beans(index): [[3, 1, 0]]
 selected coffee beans(weight): [5, 3, 2]
 selected coffee beans(costs): [40, 20, 10]
+
+//Maximum profit: 70
+selected coffee beans(index): [[3, 1, 0]]
+selected coffee beans(weight): [5, 3, 2]
+selected coffee beans(costs): [40, 20, 10] */
 '''
